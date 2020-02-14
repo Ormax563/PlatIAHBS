@@ -62,7 +62,7 @@ app.post('/upload', upload.single('myFile'), (req,res, next) =>{
                   result = response.data;
                   alg = 'lineal';
                   console.log(result);
-                  res.redirect('https://pia-int.herokuapp.com/res');
+                  res.redirect('http://localhost:4000/res');
                 });
               });
             });
@@ -114,7 +114,7 @@ if(file.mimetype !== 'application/vnd.ms-excel'){
                 result = response.data;
                 alg = 'exponencial';
                 console.log(result);
-                res.redirect('https://pia-int.herokuapp.com/res');
+                res.redirect('http://localhost:4000/res');
               });
             });
           });
